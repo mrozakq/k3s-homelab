@@ -3,9 +3,11 @@ kind: Service
 metadata:
   name: linkding
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   selector:
     app: linkding
   ports:
-    - port: 9090
+    - name: http
+      port: 9090
       targetPort: 9090
+      protocol: TCP
