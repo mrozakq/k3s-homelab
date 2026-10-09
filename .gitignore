@@ -1,0 +1,4 @@
+*kubeconfig*
+k3s.yaml
+.env
+*-secret.yaml
